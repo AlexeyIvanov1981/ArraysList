@@ -35,10 +35,6 @@ public class Main {
 
             if (userInput == 2) {
                 getSails(sails);
-//                System.out.println("Список покупок: ");
-//                for (int i = 0; i < sails.size(); i++) {
-//                    System.out.println((i + 1) + ". " + sails.get(i));
-//                }
                 System.out.println();
             }
             if (userInput == 3) {
@@ -56,7 +52,6 @@ public class Main {
                     System.out.println("You are enter ToDo name instead of ToDo number. We will delete it by value.");
                 }
 
-//                int tmp = Integer.parseInt(inputSails) - 1;
                 if (tmp < sails.size()) {
                     sails.remove(tmp);
                     System.out.print("Покупка " + (tmp + 1) + " удалена! ");
@@ -70,6 +65,7 @@ public class Main {
             }
         }
     }
+
     public static void getSails(ArrayList<String> sails) {
         System.out.println("Список покупок: ");
         for (int i = 0; i < sails.size(); i++) {
